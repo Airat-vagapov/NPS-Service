@@ -4,14 +4,14 @@ public class NPSService {
         int promoters = 0;
         int detractors = 0;
         for (int vote : votes) {
-            sum = sum + vote;
+            sum++;
 
-            if (vote > 9) {
-                promoters = promoters + vote;
+            if (vote > 8) {
+                promoters++;
             }
 
-            if (vote < 6) {
-                detractors = detractors + vote;
+            if (vote < 7) {
+                detractors++;
 
             }
         }
