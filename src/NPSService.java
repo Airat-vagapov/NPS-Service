@@ -6,11 +6,11 @@ public class NPSService {
         for (int vote : votes) {
             sum++;
 
-            if (vote > 8) {
+            if (vote > 8 && vote <= 10) {
                 promoters++;
             }
 
-            if (vote < 7) {
+            if (vote >=0 && vote < 7) {
                 detractors++;
 
             }
