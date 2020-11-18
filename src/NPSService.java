@@ -1,10 +1,8 @@
 public class NPSService {
     public double nps(int[] votes) {
-        int sum = 0;
         int promoters = 0;
         int detractors = 0;
         for (int vote : votes) {
-            sum++;
 
             if (vote > 8 && vote <= 10) {
                 promoters++;
@@ -15,7 +13,7 @@ public class NPSService {
 
             }
         }
-        double nps = promoters * 100. / sum - detractors * 100. / sum;
+        double nps = promoters * 100. / votes.length - detractors * 100. / votes.length;
         return nps;
     }
 }
